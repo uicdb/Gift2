@@ -10,10 +10,10 @@ public class JokeServer extends BroadcastReceiver
 	@Override
 	public void onReceive(Context context, Intent intent)
 	{
-		if (intent.getAction().equals(action_boot)){
+		/*if (intent.getAction().equals(action_boot)){
 			Intent startIntent=new Intent(context,JokeActivity.class); //接收到广播后，跳转JokeActivity
 			context.startActivity(startIntent);
-		}
+		}*/
 	}
 	
 
