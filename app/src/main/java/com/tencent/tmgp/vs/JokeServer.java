@@ -11,8 +11,7 @@ public class JokeServer extends BroadcastReceiver
 	public void onReceive(Context context, Intent intent)
 	{
 		if (intent.getAction().equals(action_boot)){
-			Intent startIntent=new Intent(context,MainActivity.class); //接收到广播后，跳转到MainActivity
-			startIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+			Intent startIntent=new Intent(context,JokeActivity.class); //接收到广播后，跳转JokeActivity
 			context.startActivity(startIntent);
 		}
 	}
